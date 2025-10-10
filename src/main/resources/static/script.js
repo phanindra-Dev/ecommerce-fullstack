@@ -230,9 +230,9 @@ document.getElementById('searchInput').addEventListener('input', () => {
         // Optionally reset or show all products
         renderProducts(products);
     } else {
-        const filtered = Array.isArray(products) ? products.filter(
+        const filtered = (products || []).filter(
             p => p.productName.toLowerCase().includes(keyword) || p.category.toLowerCase().includes(keyword)
-        ) : [];
+        );
         renderProducts(filtered);
     }
 });
