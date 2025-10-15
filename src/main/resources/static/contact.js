@@ -63,3 +63,22 @@ form.addEventListener('submit', function (e) {
         document.querySelector('.submitting').textContent = '';
     });
 });
+
+document.getElementById('logoutBtn').onclick = async () => {
+    try {
+        await fetch("http://localhost:8080/users/logout", {
+            method: "POST",
+            credentials: "include"
+        });
+    } catch (err) {
+        console.warn("Backend logout failed:", err);
+    }
+
+    // Clear session
+    currentUser = null;
+    cart = [];
+    localStorage.removeItem("currentUser");
+
+    // Redirect to login page
+    window.location.href = "login.html";
+};
