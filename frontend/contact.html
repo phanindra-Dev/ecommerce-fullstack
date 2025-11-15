@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css"> <!-- Corrected path -->
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="nav">
+    <div class="logo">
+        <h1>Phani</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#">User</a>
+            <ul class="dropdown-content">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </li>
+        <li><a href="#Cart_Id">Cart</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" aria-label="Toggle Menu" role="button" tabindex="0">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</nav>
+
+<!-- Contact Form Section -->
+<div class="container">
+    <div class="contact-wrap">
+        <div class="form">
+            <h3>Send us a message</h3>
+            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="name" class="col-form-label">Name *</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="email" class="col-form-label">Email *</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="phone" class="col-form-label">Phone</label>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone #">
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="product" class="col-form-label">Product</label>
+                        <input type="text" class="form-control" name="product" id="product" placeholder="Product Details">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 form-group mb-3">
+                        <label for="message" class="col-form-label">Message *</label>
+                        <textarea class="form-control" name="message" id="message" rows="4" placeholder="Write your message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                    </div>
+                </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div>
+            <div id="form-message-success">
+                Your message was sent, thank you!
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul class="list-unstyled">
+                <li class="d-flex">
+                    <span class="wrap-icon icon-room mr-3"></span>
+                    <span class="text"></span>
+                </li>
+                <li class="d-flex">
+                    <span class="wrap-icon icon-phone mr-3"></span>
+                    <span class="text"></span>
+                </li>
+                <li class="d-flex">
+                    <span class="wrap-icon icon-envelope mr-3"></span>
+                    <span class="text"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Hamburger Menu Toggle Script -->
+<script src="config.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

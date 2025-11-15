@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce-frontend",
+  "version": "1.0.0",
+  "description": "E-commerce frontend for Render deployment",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Frontend files ready'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -18,6 +18,7 @@ public class ProductController {
     @Autowired
     private ProductServices productService;
 
+
     @GetMapping("/all")
     public List<Product> getAllUsers() {
         return productService.getProducts();
